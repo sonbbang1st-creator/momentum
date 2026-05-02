@@ -1,25 +1,32 @@
-// src/app/_components/top-bar.tsx
 import Link from 'next/link'
-import { History, Settings } from 'lucide-react'
+import { CalendarClock, Settings } from 'lucide-react'
 
-export function TopBar({ dateLabel }: { dateLabel: string }) {
+interface TopBarProps {
+  isoDate: string  // e.g. "2026.05.02"
+  weekdayLabel: string  // e.g. "토요일"
+}
+
+export function TopBar({ isoDate, weekdayLabel }: TopBarProps) {
   return (
-    <header className="flex items-center justify-between py-(--spacing-md)">
-      <span className="text-[14px] leading-[1.43] font-bold tracking-[-0.14px] text-ink">{dateLabel}</span>
-      <nav className="flex items-center gap-(--spacing-xs)">
+    <header className="flex items-center justify-between py-3">
+      <div className="flex flex-col">
+        <span className="text-[11px] leading-[1.33] font-bold tracking-[1.5px] text-steel">{isoDate}</span>
+        <span className="text-[14px] leading-[1.43] font-bold text-ink">{weekdayLabel}</span>
+      </div>
+      <nav className="flex items-center gap-1.5">
         <Link
           href="/history"
           aria-label="내 기록"
-          className="w-10 h-10 rounded-full bg-canvas border border-hairline-soft flex items-center justify-center"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-soft bg-canvas text-ink"
         >
-          <History size={20} />
+          <CalendarClock size={18} />
         </Link>
         <Link
           href="/settings"
           aria-label="설정"
-          className="w-10 h-10 rounded-full bg-canvas border border-hairline-soft flex items-center justify-center"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-soft bg-canvas text-ink"
         >
-          <Settings size={20} />
+          <Settings size={18} />
         </Link>
       </nav>
     </header>

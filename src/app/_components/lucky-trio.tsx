@@ -1,27 +1,42 @@
-// src/app/_components/lucky-trio.tsx
+import { Coffee } from 'lucide-react'
 import type { FortunePayload } from '@/app/_lib/fortune/schema'
 
 export function LuckyTrio({ lucky }: { lucky: FortunePayload['lucky'] }) {
   return (
-    <ul className="mt-(--spacing-md) grid grid-cols-3 gap-(--spacing-md)">
-      <li className="rounded-xl border border-hairline-soft bg-canvas px-(--spacing-md) py-(--spacing-base) flex flex-col items-center gap-(--spacing-xs)">
+    <ul className="mt-3 grid grid-cols-3 gap-2.5">
+      <li
+        className="flex flex-col items-center justify-center gap-2.5 rounded-[24px] px-3 py-[18px]"
+        style={{ background: '#E8F4EC' }}
+      >
         <span
-          className="block w-12 h-12 rounded-full"
-          style={{ background: lucky.color.hex }}
+          className="block h-12 w-12 rounded-full"
+          style={{ background: lucky.color.hex, boxShadow: '0 0 0 6px #FFFFFF' }}
           aria-hidden
         />
-        <span className="text-[12px] leading-[1.33] font-bold text-ink">행운의 색</span>
-        <span className="text-[12px] leading-[1.33] text-steel">{lucky.color.name}</span>
+        <span className="text-[10px] leading-[1.33] font-bold tracking-[1.2px] text-charcoal">행운의 색</span>
+        <span className="text-[11px] leading-[1.33] text-ink-deep">{lucky.color.name}</span>
       </li>
-      <li className="rounded-xl border border-hairline-soft bg-canvas px-(--spacing-md) py-(--spacing-base) flex flex-col items-center gap-(--spacing-xs)">
-        <span className="text-[36px] leading-[1.17] font-medium text-ink-deep" style={{ fontFeatureSettings: '"ss01","ss02"' }}>
+      <li
+        className="flex flex-col items-center justify-center gap-1.5 rounded-[24px] px-3 py-[18px]"
+        style={{ background: '#EAF1F9' }}
+      >
+        <span
+          className="text-[56px] leading-[1] font-light tracking-[-2px] text-ink-deep"
+          style={{ fontFeatureSettings: '"ss01","ss02"' }}
+        >
           {lucky.number}
         </span>
-        <span className="text-[12px] leading-[1.33] font-bold text-ink">행운의 숫자</span>
+        <span className="text-[10px] leading-[1.33] font-bold tracking-[1.2px] text-charcoal">행운의 숫자</span>
       </li>
-      <li className="rounded-xl border border-hairline-soft bg-canvas px-(--spacing-md) py-(--spacing-base) flex flex-col items-center gap-(--spacing-xs)">
-        <span className="text-[14px] leading-[1.43] font-bold text-ink-deep text-center">{lucky.item}</span>
-        <span className="text-[12px] leading-[1.33] font-bold text-ink">행운의 아이템</span>
+      <li
+        className="flex flex-col items-center justify-center gap-2 rounded-[24px] px-3 py-[18px] text-center"
+        style={{ background: '#FBEDE2' }}
+      >
+        <Coffee size={28} className="text-ink-deep" />
+        <span className="text-[12px] leading-[1.33] font-bold tracking-[-0.1px] text-ink-deep">
+          {lucky.item}
+        </span>
+        <span className="text-[10px] leading-[1.33] font-bold tracking-[1.2px] text-charcoal">행운의 아이템</span>
       </li>
     </ul>
   )
