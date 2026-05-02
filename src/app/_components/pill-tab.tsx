@@ -1,4 +1,3 @@
-// src/app/_components/pill-tab.tsx
 'use client'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -14,7 +13,7 @@ export function PillTab({
   const router = useRouter()
   const params = useSearchParams()
   return (
-    <div className="inline-flex rounded-full bg-canvas border border-hairline p-1">
+    <div className="inline-flex rounded-full p-1" style={{ background: '#F5F6F7' }}>
       {options.map((o) => {
         const active = o.value === current
         return (
@@ -27,8 +26,8 @@ export function PillTab({
               router.replace(`?${next.toString()}`, { scroll: false })
             }}
             className={[
-              'px-(--spacing-base) py-(--spacing-xs) text-[14px] leading-[1.43] font-bold rounded-full',
-              active ? 'bg-ink-deep text-canvas' : 'text-ink',
+              'rounded-full px-4 py-1.5 text-[12px] leading-[1.33] font-bold',
+              active ? 'bg-ink-deep text-canvas' : 'text-charcoal',
             ].join(' ')}
           >
             {o.label}
