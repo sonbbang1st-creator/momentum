@@ -8,19 +8,37 @@ export default async function LoginPage() {
   if (data.user) redirect('/')
 
   return (
-    <main className="flex min-h-dvh flex-col px-(--spacing-xl) pb-(--spacing-xxxl) pt-(--spacing-section)">
-      <div className="flex-1 flex flex-col justify-center items-center gap-(--spacing-md)">
-        <h1 className="text-[40px] leading-[1.16] font-medium tracking-[0] text-ink-deep" style={{ fontFeatureSettings: '"ss01","ss02"' }}>
-          MBTI 데일리 운세
+    <main className="relative flex min-h-dvh flex-col overflow-hidden bg-canvas px-8 pb-10 pt-[88px]">
+      <span
+        aria-hidden
+        className="pointer-events-none absolute -top-24 right-0 h-[300px] w-[300px] rounded-full opacity-60 blur-[60px]"
+        style={{ background: '#B8E6D2' }}
+      />
+      <span
+        aria-hidden
+        className="pointer-events-none absolute -top-32 -left-16 h-[280px] w-[280px] rounded-full opacity-50 blur-[60px]"
+        style={{ background: '#FBE5DD' }}
+      />
+
+      <div className="relative flex flex-1 flex-col gap-5">
+        <p className="text-[12px] font-bold tracking-[2.5px] text-steel">MBTI</p>
+        <h1
+          className="text-[56px] leading-[1.05] font-medium tracking-[-1.5px] text-ink-deep"
+          style={{ fontFeatureSettings: '"ss01","ss02"' }}
+        >
+          데일리 운세
         </h1>
-        <p className="text-[18px] leading-[1.44] text-ink text-center">
-          내 MBTI에 맞춘 오늘의 다정한 한 줄.
+        <p className="text-[22px] leading-[1.36] font-light tracking-[-0.4px] text-charcoal whitespace-pre-line">
+          {'내 MBTI에 맞춘\n오늘의 다정한 한 줄.'}
         </p>
       </div>
-      <LoginButton />
-      <p className="mt-(--spacing-md) text-[12px] leading-[1.33] text-steel text-center">
-        로그인 시 서비스 이용약관과 개인정보처리방침에 동의하게 돼요.
-      </p>
+
+      <div className="relative flex flex-col items-center gap-3.5">
+        <LoginButton />
+        <p className="text-center text-[11px] leading-[1.45] text-steel">
+          로그인 시 서비스 이용약관과 개인정보처리방침에 동의하게 돼요.
+        </p>
+      </div>
     </main>
   )
 }

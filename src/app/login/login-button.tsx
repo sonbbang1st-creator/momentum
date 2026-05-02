@@ -1,4 +1,5 @@
 'use client'
+import { Sparkles } from 'lucide-react'
 import { createBrowserSupabase } from '@/app/_lib/supabase/browser'
 
 export function LoginButton() {
@@ -13,8 +14,9 @@ export function LoginButton() {
     <button
       type="button"
       onClick={onClick}
-      className="w-full rounded-full bg-ink-button text-on-ink-button px-[30px] py-[14px] text-[14px] font-bold tracking-[-0.14px]"
+      className="flex w-full items-center justify-center gap-2.5 rounded-full bg-ink-button px-[30px] py-4 text-[15px] font-bold tracking-[-0.2px] text-on-ink-button"
     >
+      <Sparkles size={16} />
       Google로 시작하기
     </button>
   )
