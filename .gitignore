@@ -41,9 +41,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# generated supabase types
-src/types/database.ts
-
 # test artifacts
 playwright-report/
 test-results/
