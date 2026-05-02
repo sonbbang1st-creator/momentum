@@ -18,7 +18,7 @@
   --color-ink-button: #0a1317;
   --color-on-ink-button: #ffffff;
 
-  --color-primary: #1877f2;
+  --color-primary: #1877f2;          /* cobalt — reserved, not used in this app */
   --color-primary-deep: #0143b5;
   --color-primary-soft: rgba(24, 119, 242, 0.15);
   --color-on-primary: #ffffff;
