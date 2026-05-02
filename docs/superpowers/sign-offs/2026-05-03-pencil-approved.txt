@@ -1,0 +1,2 @@
+2026-05-02T15:10:51Z
+Pencil mockups approved by user (premium redesign — atmospheric blur + editorial typography rhythm + pastel-tinted accent cards). 7 mobile screens: Login, Today, Onboarding, History Calendar, History List, History Detail, Settings.
