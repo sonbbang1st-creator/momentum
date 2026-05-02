@@ -1,15 +1,36 @@
-export default function Home() {
+// src/app/page.tsx
+import Link from 'next/link'
+import { Suspense } from 'react'
+import { requireProfile } from '@/app/_lib/auth/guards'
+import { TopBar } from '@/app/_components/top-bar'
+import { FortuneCard } from '@/app/_components/fortune-card'
+import { FortuneSkeleton } from '@/app/_components/fortune-skeleton'
+import { getOrCreateTodayFortune } from '@/app/_actions/fortune'
+import { todayKstIso } from '@/app/_lib/kst'
+
+function formatDateKo(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number)
+  return `${y}년 ${m}월 ${d}일`
+}
+
+export default async function HomePage() {
+  await requireProfile() // route guard
   return (
-    <main className="flex min-h-dvh flex-col items-center justify-center bg-canvas px-(--spacing-xl) text-center text-ink">
-      <h1
-        className="text-[28px] leading-[1.21] font-light text-ink-deep"
-        style={{ fontFeatureSettings: '"ss01","ss02"' }}
-      >
-        MBTI 데일리 운세
-      </h1>
-      <p className="mt-(--spacing-base) text-[16px] leading-[1.5] text-ink">
-        곧 오늘의 운세가 여기에 도착합니다.
-      </p>
+    <main className="flex min-h-dvh flex-col px-(--spacing-xl) pb-(--spacing-xxxl)">
+      <TopBar dateLabel={formatDateKo(todayKstIso())} />
+      <Suspense fallback={<FortuneSkeleton />}>
+        <TodayFortune />
+      </Suspense>
+      <div className="mt-(--spacing-xxl) text-center">
+        <Link href="/history" className="text-[16px] leading-[1.5] font-bold text-ink-deep underline-offset-4 hover:underline">
+          내 기록 보기
+        </Link>
+      </div>
     </main>
-  );
+  )
+}
+
+async function TodayFortune() {
+  const { payload, mbti, source } = await getOrCreateTodayFortune()
+  return <FortuneCard mbti={mbti} payload={payload} fallbackNotice={source === 'fallback'} />
 }
