@@ -1,8 +1,7 @@
 // src/app/onboarding/mbti/page.tsx
 import { redirect } from 'next/navigation'
 import { createServerSupabase } from '@/app/_lib/supabase/server'
-import { MbtiGrid } from '@/app/_components/mbti-grid'
-import { createProfile } from '@/app/_actions/profile'
+import { OnboardingForm } from './onboarding-form'
 
 export default async function OnboardingMbtiPage() {
   const supabase = await createServerSupabase()
@@ -25,17 +24,7 @@ export default async function OnboardingMbtiPage() {
         선택한 MBTI를 기준으로 매일 한 편의 운세를 만들어드려요.
       </p>
 
-      <form action={createProfile} className="mt-(--spacing-xxl) flex-1 flex flex-col">
-        <MbtiGrid name="mbti" />
-        <div className="mt-auto pt-(--spacing-xl)">
-          <button
-            type="submit"
-            className="w-full rounded-full bg-ink-button text-on-ink-button px-[30px] py-[14px] text-[14px] font-bold tracking-[-0.14px] disabled:bg-stone disabled:text-canvas"
-          >
-            시작하기
-          </button>
-        </div>
-      </form>
+      <OnboardingForm />
     </main>
   )
 }
