@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(New-Item *)"
+      "PowerShell(New-Item *)",
+      "PowerShell(Join-Path *)",
+      "PowerShell(Get-Content *)",
+      "Skill(claude-hud:setup)",
+      "PowerShell(Test-Path *)"
     ]
   }
 }
