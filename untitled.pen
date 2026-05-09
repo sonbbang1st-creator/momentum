@@ -215,7 +215,8 @@
                   "lineHeight": 1.45,
                   "textAlign": "center",
                   "fontFamily": "Montserrat",
-                  "fontSize": 11
+                  "fontSize": 11,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -552,7 +553,8 @@
                       "content": "soft mint",
                       "lineHeight": 1.33,
                       "fontFamily": "Montserrat",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -833,7 +835,8 @@
                           "content": "전략가",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -876,7 +879,8 @@
                           "content": "논리술사",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -919,7 +923,8 @@
                           "content": "통솔자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -962,7 +967,8 @@
                           "content": "변론가",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -1015,7 +1021,8 @@
                           "content": "옹호자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1058,7 +1065,8 @@
                           "content": "중재자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1101,7 +1109,8 @@
                           "content": "선도자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1144,7 +1153,8 @@
                           "content": "활동가",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -1197,7 +1207,8 @@
                           "content": "현실주의자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1240,7 +1251,8 @@
                           "content": "수호자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1283,7 +1295,8 @@
                           "content": "경영자",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1326,7 +1339,8 @@
                           "content": "집정관",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -1379,7 +1393,8 @@
                           "content": "장인",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1422,7 +1437,8 @@
                           "content": "모험가",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1465,7 +1481,8 @@
                           "content": "사업가",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -1508,7 +1525,8 @@
                           "content": "연예인",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 10
+                          "fontSize": 10,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -2058,7 +2076,8 @@
                           "content": "1",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "ellipse",
@@ -2139,7 +2158,8 @@
                           "content": "3",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2161,7 +2181,8 @@
                           "content": "4",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2183,7 +2204,8 @@
                           "content": "5",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2205,7 +2227,8 @@
                           "content": "6",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2227,7 +2250,8 @@
                           "content": "7",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2249,7 +2273,8 @@
                           "content": "8",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2271,7 +2296,8 @@
                           "content": "9",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -2301,7 +2327,8 @@
                           "content": "10",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2322,7 +2349,8 @@
                           "content": "11",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2343,7 +2371,8 @@
                           "content": "12",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2364,7 +2393,8 @@
                           "content": "13",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2385,7 +2415,8 @@
                           "content": "14",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2406,7 +2437,8 @@
                           "content": "15",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2427,7 +2459,8 @@
                           "content": "16",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -2457,7 +2490,8 @@
                           "content": "17",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2478,7 +2512,8 @@
                           "content": "18",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2499,7 +2534,8 @@
                           "content": "19",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2520,7 +2556,8 @@
                           "content": "20",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2541,7 +2578,8 @@
                           "content": "21",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2562,7 +2600,8 @@
                           "content": "22",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2583,7 +2622,8 @@
                           "content": "23",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -2613,7 +2653,8 @@
                           "content": "24",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2634,7 +2675,8 @@
                           "content": "25",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2655,7 +2697,8 @@
                           "content": "26",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2676,7 +2719,8 @@
                           "content": "27",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2697,7 +2741,8 @@
                           "content": "28",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2718,7 +2763,8 @@
                           "content": "29",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -2739,7 +2785,8 @@
                           "content": "30",
                           "lineHeight": 1.2,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -3016,6 +3063,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3074,6 +3122,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3132,6 +3181,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3190,6 +3240,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3248,6 +3299,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3302,6 +3354,7 @@
                           "lineHeight": 1.5,
                           "fontFamily": "Montserrat",
                           "fontSize": 14,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.1
                         }
                       ]
@@ -3922,7 +3975,8 @@
                       "content": "sonbbang1st@gmail.com",
                       "lineHeight": 1.4,
                       "fontFamily": "Montserrat",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -4074,7 +4128,8 @@
                   "content": "오늘 운세는 변경 전 MBTI 기준으로 유지돼요.",
                   "lineHeight": 1.4,
                   "fontFamily": "Montserrat",
-                  "fontSize": 11
+                  "fontSize": 11,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -4128,7 +4183,8 @@
                           "content": "알림",
                           "lineHeight": 1.43,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -4146,7 +4202,8 @@
                           "content": "매일 오전 8시",
                           "lineHeight": 1.33,
                           "fontFamily": "Montserrat",
-                          "fontSize": 12
+                          "fontSize": 12,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "icon_font",
@@ -4200,7 +4257,8 @@
                           "content": "이용약관 · 개인정보처리방침",
                           "lineHeight": 1.43,
                           "fontFamily": "Montserrat",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -4282,6 +4340,488 @@
                   "fontSize": 10,
                   "fontWeight": "700",
                   "letterSpacing": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "f8Vhr",
+      "x": 80,
+      "y": 1964,
+      "name": "Login — Form",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$app/canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "zzL9R",
+          "x": 75,
+          "y": -96,
+          "opacity": 0.6,
+          "fill": "#B8E6D2",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 60
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "L0MxW9",
+          "x": -64,
+          "y": -128,
+          "opacity": 0.5,
+          "fill": "#FBE5DD",
+          "width": 280,
+          "height": 280,
+          "effect": {
+            "type": "blur",
+            "radius": 60
+          }
+        },
+        {
+          "type": "frame",
+          "id": "hlEVm",
+          "x": 0,
+          "y": 0,
+          "name": "content",
+          "width": 375,
+          "height": 812,
+          "fill": "#FFFFFF00",
+          "layout": "vertical",
+          "padding": [
+            88,
+            32,
+            40,
+            32
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OE6LE",
+              "name": "topG",
+              "width": "fill_container",
+              "fill": "#FFFFFF00",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p02kkB",
+                  "fill": "$app/steel",
+                  "content": "MBTI",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2.5
+                },
+                {
+                  "type": "text",
+                  "id": "pBeV0",
+                  "fill": "$app/ink-deep",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "데일리 운세",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$app/font-display",
+                  "fontSize": 56,
+                  "fontWeight": "500",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "CYjWv",
+                  "fill": "$app/charcoal",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "내 MBTI에 맞춘\n오늘의 다정한 한 줄.",
+                  "lineHeight": 1.36,
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 22,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PMk2y",
+              "name": "botG",
+              "width": "fill_container",
+              "fill": "#FFFFFF00",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D5eCw",
+                  "name": "gBtn",
+                  "width": "fill_container",
+                  "fill": "$app/ink-button",
+                  "cornerRadius": "$app/r-full",
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    30
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "bWCcI",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "sparkles",
+                      "iconFontFamily": "lucide",
+                      "fill": "$app/on-ink-button"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XZbxc",
+                      "fill": "$app/on-ink-button",
+                      "content": "Google로 시작하기",
+                      "fontFamily": "$app/font-body",
+                      "fontSize": 15,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NQ6kh",
+                  "name": "divider",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF00",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "z2hlf",
+                      "fill": "$app/hairline-soft",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "U5Tlt",
+                      "fill": "$app/steel",
+                      "content": "또는",
+                      "fontFamily": "$app/font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "mKveF",
+                      "fill": "$app/hairline-soft",
+                      "width": "fill_container",
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QjTEE",
+                  "name": "inp",
+                  "width": "fill_container",
+                  "fill": "$app/canvas",
+                  "cornerRadius": "$app/r-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$app/hairline"
+                  },
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jQLrl",
+                      "fill": "$app/stone",
+                      "content": "company@example.com",
+                      "fontFamily": "$app/font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aHypW",
+                  "name": "mBtn",
+                  "width": "fill_container",
+                  "fill": "$app/canvas",
+                  "cornerRadius": "$app/r-full",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$app/ink-deep"
+                  },
+                  "padding": [
+                    14,
+                    30
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y01vrP",
+                      "fill": "$app/ink-deep",
+                      "content": "이메일로 링크 받기",
+                      "fontFamily": "$app/font-body",
+                      "fontSize": 15,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "v7KWT",
+                  "fill": "$app/steel",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "로그인 시 서비스 이용약관과 개인정보처리방침에 동의하게 돼요.",
+                  "lineHeight": 1.45,
+                  "textAlign": "center",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "F0V9f",
+      "x": 520,
+      "y": 1964,
+      "name": "Login — Email Sent",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$app/canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "DHz1w",
+          "x": 75,
+          "y": -96,
+          "opacity": 0.6,
+          "fill": "#B8E6D2",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 60
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "Su5GF",
+          "x": -64,
+          "y": -128,
+          "opacity": 0.5,
+          "fill": "#FBE5DD",
+          "width": 280,
+          "height": 280,
+          "effect": {
+            "type": "blur",
+            "radius": 60
+          }
+        },
+        {
+          "type": "frame",
+          "id": "quuGE",
+          "x": 0,
+          "y": 0,
+          "name": "c2",
+          "width": 375,
+          "height": 812,
+          "fill": "#FFFFFF00",
+          "layout": "vertical",
+          "padding": [
+            88,
+            32,
+            40,
+            32
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wb77D",
+              "name": "top2",
+              "width": "fill_container",
+              "fill": "#FFFFFF00",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CjOZM",
+                  "fill": "$app/steel",
+                  "content": "MBTI",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2.5
+                },
+                {
+                  "type": "text",
+                  "id": "B3k4I",
+                  "fill": "$app/ink-deep",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "데일리 운세",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$app/font-display",
+                  "fontSize": 56,
+                  "fontWeight": "500",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "uw0n0",
+                  "fill": "$app/charcoal",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "내 MBTI에 맞춘\n오늘의 다정한 한 줄.",
+                  "lineHeight": 1.36,
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 22,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Nxwos",
+              "name": "bot2",
+              "width": "fill_container",
+              "fill": "#FFFFFF00",
+              "layout": "vertical",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C5PzEp",
+                  "name": "iconBox",
+                  "width": 64,
+                  "height": 64,
+                  "fill": "$app/surface-soft",
+                  "cornerRadius": "$app/r-full",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "q7fy0D",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "mail-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$app/ink-deep"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Bu9Gt",
+                  "fill": "$app/ink-deep",
+                  "content": "메일을 보냈어요",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$app/font-display",
+                  "fontSize": 24,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "T2Bp8K",
+                  "fill": "$app/primary",
+                  "content": "company@example.com",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.14
+                },
+                {
+                  "type": "text",
+                  "id": "nEhJs",
+                  "fill": "$app/charcoal",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "도착한 링크를 눌러 5분 안에 로그인하세요.",
+                  "lineHeight": 1.43,
+                  "textAlign": "center",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 14,
+                  "letterSpacing": -0.14
+                },
+                {
+                  "type": "rectangle",
+                  "id": "K0ESq",
+                  "name": "spacer",
+                  "fill": "$app/hairline-soft",
+                  "width": 40,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "SCS6z",
+                  "name": "resend",
+                  "fill": "#FFFFFF00",
+                  "gap": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "oyvJR",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "refresh-cw",
+                      "iconFontFamily": "lucide",
+                      "fill": "$app/ink-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ayARk",
+                      "fill": "$app/ink-deep",
+                      "content": "다시 보내기",
+                      "fontFamily": "$app/font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.14
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "gxM74",
+                  "fill": "$app/steel",
+                  "content": "다른 이메일로",
+                  "fontFamily": "$app/font-body",
+                  "fontSize": 13
                 }
               ]
             }
