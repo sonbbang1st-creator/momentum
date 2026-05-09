@@ -528,3 +528,7 @@ echo "company.com,subsidiary.co.kr" | vercel env add ALLOWED_EMAIL_DOMAINS devel
 - 자동 테스트는 도메인 유틸 단위 테스트 8개. Server Action·UI는 수동 검증.
 - 콜백 라우트(`/auth/callback`)와 미들웨어는 무변경.
 - 프로덕션에 환경변수만 추가하면 배포 끝.
+
+---
+
+> **Implementation history:** Tasks 3 and 4 received post-review follow-up commits — see branch commit history for the final shape (resend handler, aria-describedby, focus management, divider role, ?error=oauth banner, resend confirmation).

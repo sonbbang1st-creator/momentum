@@ -3,10 +3,17 @@ import { createServerSupabase } from '@/app/_lib/supabase/server'
 import { LoginButton } from './login-button'
 import { EmailForm } from './email-form'
 
-export default async function LoginPage() {
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string }>
+}) {
   const supabase = await createServerSupabase()
   const { data } = await supabase.auth.getUser()
   if (data.user) redirect('/')
+
+  const { error } = await searchParams
+  const showOauthError = error === 'oauth'
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-hidden bg-canvas px-8 pb-10 pt-[88px]">
@@ -35,6 +42,14 @@ export default async function LoginPage() {
       </div>
 
       <div className="relative flex flex-col items-center gap-3.5">
+        {showOauthError && (
+          <div
+            role="alert"
+            className="w-full rounded-lg border border-critical-strong px-4 py-3 text-[13px] text-critical-strong"
+          >
+            로그인에 실패했어요. 잠시 후 다시 시도해주세요.
+          </div>
+        )}
         <LoginButton />
         <div role="separator" aria-orientation="horizontal" className="flex w-full items-center gap-3">
           <span aria-hidden className="h-px flex-1 bg-hairline-soft" />

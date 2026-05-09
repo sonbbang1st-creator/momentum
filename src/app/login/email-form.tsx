@@ -12,9 +12,11 @@ export function EmailForm() {
 
   const [view, setView] = useState<'form' | 'sent'>('form')
   const [sentEmail, setSentEmail] = useState('')
+  const [resendStatus, setResendStatus] = useState<'idle' | 'sending' | 'just-sent'>('idle')
 
   const headingRef = useRef<HTMLHeadingElement | null>(null)
   const inputRef = useRef<HTMLInputElement | null>(null)
+  const prevView = useRef<typeof view>(view)
 
   useEffect(() => {
     if (state?.ok) {
@@ -24,15 +26,24 @@ export function EmailForm() {
   }, [state])
 
   useEffect(() => {
-    if (view === 'sent') {
-      headingRef.current?.focus()
-    } else {
-      inputRef.current?.focus()
+    if (prevView.current !== view) {
+      if (view === 'sent') headingRef.current?.focus()
+      else inputRef.current?.focus()
     }
+    prevView.current = view
   }, [view])
 
+  useEffect(() => {
+    if (resendStatus === 'sending' && !isPending && state?.ok) {
+      setResendStatus('just-sent')
+      const t = setTimeout(() => setResendStatus('idle'), 3000)
+      return () => clearTimeout(t)
+    }
+  }, [resendStatus, isPending, state])
+
   function handleResend() {
-    if (!sentEmail) return
+    if (!sentEmail || isPending) return
+    setResendStatus('sending')
     const fd = new FormData()
     fd.set('email', sentEmail)
     formAction(fd)
@@ -57,6 +68,11 @@ export function EmailForm() {
         <p className="text-center text-[14px] leading-[1.43] tracking-[-0.14px] text-charcoal">
           도착한 링크를 눌러 5분 안에 로그인하세요.
         </p>
+        {resendStatus === 'just-sent' && (
+          <p role="status" className="text-[13px] text-success">
+            다시 보냈어요
+          </p>
+        )}
         <span aria-hidden className="h-px w-10 bg-hairline-soft" />
         <button
           type="button"
@@ -73,7 +89,7 @@ export function EmailForm() {
         </button>
         <button
           type="button"
-          onClick={() => setView('form')}
+          onClick={() => { setView('form'); setResendStatus('idle') }}
           disabled={isPending}
           className="text-[13px] text-steel underline disabled:opacity-60"
         >
