@@ -36,10 +36,10 @@ export default async function LoginPage() {
 
       <div className="relative flex flex-col items-center gap-3.5">
         <LoginButton />
-        <div className="flex w-full items-center gap-3">
-          <span className="h-px flex-1 bg-hairline-soft" />
+        <div role="separator" aria-orientation="horizontal" className="flex w-full items-center gap-3">
+          <span aria-hidden className="h-px flex-1 bg-hairline-soft" />
           <span className="text-[12px] font-bold tracking-[2px] text-steel">또는</span>
-          <span className="h-px flex-1 bg-hairline-soft" />
+          <span aria-hidden className="h-px flex-1 bg-hairline-soft" />
         </div>
         <EmailForm />
         <p className="text-center text-[11px] leading-[1.45] text-steel">
