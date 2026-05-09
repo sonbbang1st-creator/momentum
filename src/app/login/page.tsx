@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createServerSupabase } from '@/app/_lib/supabase/server'
 import { LoginButton } from './login-button'
+import { EmailForm } from './email-form'
 
 export default async function LoginPage() {
   const supabase = await createServerSupabase()
@@ -35,6 +36,12 @@ export default async function LoginPage() {
 
       <div className="relative flex flex-col items-center gap-3.5">
         <LoginButton />
+        <div className="flex w-full items-center gap-3">
+          <span className="h-px flex-1 bg-hairline-soft" />
+          <span className="text-[12px] font-bold tracking-[2px] text-steel">또는</span>
+          <span className="h-px flex-1 bg-hairline-soft" />
+        </div>
+        <EmailForm />
         <p className="text-center text-[11px] leading-[1.45] text-steel">
           로그인 시 서비스 이용약관과 개인정보처리방침에 동의하게 돼요.
         </p>
