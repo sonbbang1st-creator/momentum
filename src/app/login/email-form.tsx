@@ -1,6 +1,6 @@
 'use client'
 
-import { useActionState, useEffect, useState } from 'react'
+import { useActionState, useEffect, useRef, useState } from 'react'
 import { Loader2, MailCheck, RefreshCw } from 'lucide-react'
 import { requestMagicLink, type RequestMagicLinkResult } from './actions'
 
@@ -13,6 +13,9 @@ export function EmailForm() {
   const [view, setView] = useState<'form' | 'sent'>('form')
   const [sentEmail, setSentEmail] = useState('')
 
+  const headingRef = useRef<HTMLHeadingElement | null>(null)
+  const inputRef = useRef<HTMLInputElement | null>(null)
+
   useEffect(() => {
     if (state?.ok) {
       setSentEmail(state.email)
@@ -20,13 +23,32 @@ export function EmailForm() {
     }
   }, [state])
 
+  useEffect(() => {
+    if (view === 'sent') {
+      headingRef.current?.focus()
+    } else {
+      inputRef.current?.focus()
+    }
+  }, [view])
+
+  function handleResend() {
+    if (!sentEmail) return
+    const fd = new FormData()
+    fd.set('email', sentEmail)
+    formAction(fd)
+  }
+
   if (view === 'sent') {
     return (
       <div className="flex w-full flex-col items-center gap-[18px]">
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-surface-soft">
           <MailCheck size={28} className="text-ink-deep" />
         </div>
-        <h2 className="text-[24px] font-medium leading-[1.25] text-ink-deep">
+        <h2
+          ref={headingRef}
+          tabIndex={-1}
+          className="text-[24px] font-medium leading-[1.25] text-ink-deep"
+        >
           메일을 보냈어요
         </h2>
         <p className="text-[14px] font-bold tracking-[-0.14px] text-primary">
@@ -38,15 +60,22 @@ export function EmailForm() {
         <span aria-hidden className="h-px w-10 bg-hairline-soft" />
         <button
           type="button"
-          onClick={() => setView('form')}
-          className="inline-flex items-center gap-1.5 text-[14px] font-bold tracking-[-0.14px] text-ink-deep underline"
+          onClick={handleResend}
+          disabled={isPending}
+          className="inline-flex items-center gap-1.5 text-[14px] font-bold tracking-[-0.14px] text-ink-deep underline disabled:opacity-60"
         >
-          <RefreshCw size={14} /> 다시 보내기
+          {isPending ? (
+            <Loader2 size={14} className="animate-spin" />
+          ) : (
+            <RefreshCw size={14} />
+          )}{' '}
+          다시 보내기
         </button>
         <button
           type="button"
           onClick={() => setView('form')}
-          className="text-[13px] text-steel underline"
+          disabled={isPending}
+          className="text-[13px] text-steel underline disabled:opacity-60"
         >
           다른 이메일로
         </button>
@@ -64,12 +93,14 @@ export function EmailForm() {
   return (
     <form action={formAction} className="flex w-full flex-col gap-3">
       <input
+        ref={inputRef}
         type="email"
         name="email"
         required
         autoComplete="email"
         placeholder="company@example.com"
         aria-invalid={errorMessage ? 'true' : undefined}
+        aria-describedby={errorMessage ? 'email-error' : undefined}
         className={`h-11 w-full rounded-lg border bg-canvas px-4 text-[15px] text-ink-deep placeholder:text-stone outline-none ${
           errorMessage
             ? 'border-critical-strong'
@@ -77,7 +108,9 @@ export function EmailForm() {
         }`}
       />
       {errorMessage && (
-        <p className="text-[13px] text-critical-strong">{errorMessage}</p>
+        <p id="email-error" role="alert" className="text-[13px] text-critical-strong">
+          {errorMessage}
+        </p>
       )}
       <button
         type="submit"
